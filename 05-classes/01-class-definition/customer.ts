@@ -9,20 +9,20 @@ class Customer {
 
     }
 
-    set firstName(firstName: string): void{
+    public setFirstName(firstName: string): void{
         this._firstName = firstName;
     }
 
-    set lastName(lastName: string): void {
+    public setLastName(lastName: string): void {
         this._lastName = lastName;
     }
 
-    get firstName(): string{
+    public getFirstName(): string{
         return this._firstName;
     }
 
 
-     get lastName(): string {
+    public getLastName(): string {
         return this._lastName;
     }
 

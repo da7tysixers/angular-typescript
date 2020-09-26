@@ -1,11 +1,8 @@
 class Customer {
-    private _firstName;
-    private _lastName;
+
     
     //createa constructor for the customer class
-    constructor(theFirst: string, theLast: string){
-            this._firstName = theFirst;
-            this._lastName = theLast;
+    constructor(private _firstName: string, private _lastName: string){
     }
 
     // create getters accessors
@@ -30,9 +27,3 @@ class Customer {
 }
 
 
-// Let's create an instance
-let anotherCustomer = new Customer("Martin", "Johnson");
-
-
-console.log(anotherCustomer.firstName);
-console.log(anotherCustomer.lastName);
