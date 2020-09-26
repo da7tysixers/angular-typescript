@@ -1,11 +1,31 @@
 class Customer {
-    firstName: string;
-    lastName: string;
+    private _firstName: string;
+    private _lastName: string;
 
 
     constructor(firstName: string, lastName: string){
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this._firstName = firstName;
+        this._lastName = lastName;
+
+    }
+
+    set firstName(firstName: string): void{
+        this._firstName = firstName;
+    }
+
+    set lastName(lastName: string): void {
+        this._lastName = lastName;
+    }
+
+    get firstName(): string{
+        return this._firstName;
+    }
+
+
+     get lastName(): string {
+        return this._lastName;
+    }
+
 }
 
 
