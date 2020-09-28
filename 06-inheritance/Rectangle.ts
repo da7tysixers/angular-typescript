@@ -1,15 +1,30 @@
 import { Shape } from "./Shape";
 
-class Rectangle extends Shape{
+export class Rectangle extends Shape{
 
     constructor(theX: number, theY: number,
-        private numX: number, private numY: number){
+        private _width: number, private _length: number){
                 super(theX, theY);
         }
 
+    public get width(): number {
+            return this._width;
+    }
+    
+    public set width(value: number) {
+            this._width = value;
+    }
 
+
+    public get length(): number {
+        return this._length;
+    }
+
+    public set length(value: number) {
+        this._length = value;
+    }
 
     getInfo(): string{
-        return `this is x= ${this.numX} and y= ${this.numY}`
+        return `this is width= ${this._width} and length= ${this._length}`
     }
 }

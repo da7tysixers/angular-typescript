@@ -2,6 +2,8 @@ let found: boolean = true;
 let grade: number = 88.6;
 let firstName: string ="Anup";
 let lastName: string= 'Kumar';
+// flexible variable can be assign any value with no restriction
+let anyValue: any= 22;
 
 /** 
 found = 0;
